@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    border-bottom: 2px solid rgb(51, 149, 206);
+    color: rgb(51, 149, 206);
+  }
+  
+  .header a.active {
+    border-bottom: 2px solid rgb(51, 149, 206);
+    color: rgb(51, 149, 206);
+  }
+  
+  .header-right {
+    float: right;
+  
+  }
+  
+  .mobile-menu {
+    padding-inline-start: 0px;
+  }
+  
+  .mobile-menu li {
+    list-style: none;
+  }
+  
+  .mobile-menu li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 12px;
+    margin-bottom: 3px;
+    color: black;
+  }
+  
+  .mobile-menu li a:hover {
+    border-bottom: 2px solid rgb(51, 149, 206);
+    color: rgb(51, 149, 206);
+  }
+  
+  .mobile-menu li a.active {
+    border-bottom: 2px solid rgb(51, 149, 206);
+    color: rgb(51, 149, 206);
+  }
+  .high li a:hover {
+    color: whitesmoke;
+    padding-left: 4px;
+    transition: color 0.5s ease-in-out, padding-left 0.5s ease-in-out;
+  }
+  
+  .high li{
+    list-style: none;
+  }
+  .high li a{
+    color: #c9c7c7;
+      font-size: 13px;
+      text-decoration: none;
+  }

@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <!-- ****************** Desktop view header ******************* -->
+  <div class="header-wrapper">
+    <div style="width: 70%; margin:auto;">
+      <div class="header d-flex align-items-center justify-content-between">
+       
+       <img src="images/web_logo.png" alt="no logo" width="25%">
+        <div class="header-right d-none d-lg-block">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html"> Our Services</a></li>
+            <li><a href="index.html">Pricing and Features</a>
+              <div class="unique">
+                <div class="row">
+                  <div class="col-6">
+                    <ul>
+                      <li><a href="#">ghjtkyul</a></li>
+                    </ul>                  
+                  </div>
+                  <div class="col-6">
+                    <ul>
+                      <li><a href="#">ghjtkyul</a></li>
+                    </ul>
+                  </div>  
+                </div>
+              </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>                 
+                 
+        </div>
+        <button class="d-block d-lg-none  border-0  bg-transparent" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ******************** Mobile view header ********************** -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel"><img src="images/web_logo.png" alt="no logo" width="70px"></h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="mobile-menu">
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="service.html"> Our Services</a>
+        </li>
+        <li>
+          <a href="#price">Pricing and Features</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- ********************** Slider ********************** -->
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="z-index: -1;">
+      <div class="carousel-item active">
+        <img src="images/banner1.jpg" class="d-block w-100" alt="images/banner3.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner2.jpg" class="d-block w-100" alt="images/banner3.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner3.jpg" class="d-block w-100" alt="images/banner3.jpg">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="d-flex justify-content-between align-items-center"
+    style="background-color:rgb(53, 163, 226) ; color: whitesmoke; padding: 18px;">
+    <div>
+      <p><span style="font-size: 20px;">
+          Welcome to </span> <b><span style="font-size: 22px;"> ITARSIA INDIA LIMITED </span> </b> <span
+          style="font-size: 18px;"> - A LEADING WEB DESIGN & DEVELOPMENT COMPANY</span>
+        <br> With 4500+ clients served across different industry segments, we have over decade long experience in the
+        arena of eCommerce Website <br> Development, SEO, SMO, Mobile Application Development and Web Hosting Services.
+      </p>
+    </div>
+    <div class="star" style="font-size: 28px; margin-right: 180px; margin-bottom: 28px;">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+
+  <!--| ******************* CONTENT **************-->
+  <div style="text-align: center ; margin-top: 90px;">
+    <h1> <span style="color: rgb(78, 77, 77);">OUR</span> <span style="color: rgb(53, 163, 226)  ;">SERVICES</h1></span>
+    <p style="color: gray;">We are a professionally managed Web Design & Development Company and offer complete and
+      prompt solutions and
+      services in Website design & Management to corporate <br> companies, individuals and SMEs across the world.</p>
+  </div>
+
+  <div class="container text-left" style="margin-top: 60px;">
+    <div class="row">
+      <div class="col">
+        <h5 class="cont"><i style="font-size: 29px ; margin-right: 15px;" class="fa-solid fa-file-lines rotate"><span
+              style="color:  rgb(68, 65, 65);"> </i> DYNAMIC WEBSITE</h5></span>
+
+        <p style="text-align: left; color: gray;">If you are looking for a fast track service for Web <br> Designing, we
+          can help you design a professional <br> website in no time.</p>
+      </div>
+      <div class="col">
+        <h5 class="cont"> <i style="font-size: 29px; margin-right: 15px;" class="fa-solid fa-cart-shopping rotate">
+            <span style="color:  rgb(68, 65, 65);"> </i> eCOMMERCE WEBSITE</h5></span>
+        <p style="text-align: left; color: gray;">Want to start selling your product online? It's time you <br> have
+          your own Ecommerce Website. We help you do <br> that in just days.</p>
+      </div>
+      <div class="col">
+        <h5 class="cont"><i style="font-size: 29px; margin-right: 15px;" class="fa-solid fa-square-check rotate"> <span
+              style="color:  rgb(68, 65, 65);"> </i> SEO/SMO & PPC</h5></span>
+        <p style="text-align: left; color: gray;">Having a website is not enough, you also need visibility. Let our SEO
+          & SMO team build an effective strategy for your website.
+          .</p>
+      </div>
+    </div>
+  </div>
+  <div class="container text-left mt-3">
+    <div class="row">
+      <div class="col">
+        <h5 class="cont"> <i style="font-size: 29px; margin-right: 15px;" class="fa-solid fa-suitcase rotate"> <span
+              style="color:  rgb(68, 65, 65);"> </i> CMS BASED WEBSITE</h5></span>
+        <p style="text-align: left; color: gray;"> If you need to put regular updates on your website, we suggest you
+          should go for a professional CMS driven website</p>
+      </div>
+      <div class="col">
+        <h5 class="cont"> <i style="font-size: 29px; margin-right: 15px;" class="fa-solid fa-mobile-button rotate">
+            <span style="color: rgb(68, 65, 65) ;"></i> MOBILE APP DEVELOPMENT</h5></span>
+        <p style="text-align: left; color: gray;">We help our clients develop practical and cost efficient mobile
+          applications on Andriod and iOS platforms.</p>
+      </div>
+      <div class="col">
+        <h5 class="cont"> <i style="font-size: 29px; margin-right: 15px;" class="fa-solid fa-laptop rotate"> <span
+              style="color:  rgb(68, 65, 65);"> </i> WEB PORTAL</h5></span>
+        <p style="text-align: left; color: gray;">Web Portal Development is a job of an expert. At Itarsia India
+          Limited, we are tech experts and offer practical web portal development solutions.</p>
+      </div>
+    </div>
+  </div>
+  <img src="images/web_sale.jpg" alt="" width="100%" height="600px">
+
+  <!-- **************** Rectangle shape Design ****************** -->
+  <div style="background-color: lightgrey; padding: 70px; justify-content: center;">
+
+    <div class="container text-center mt-4 " style="color: whitesmoke;">
+      <div class="row g-4">
+        <div class="col box" style="transition: transform 1s ease-in-out; ">
+          <div style="border: 1px solid black;  padding: 10px; background-color: rgba(4, 72, 136, 0.911);">
+            <div style="border: 1px solid black; padding: 20px;  background-color: rgb(61, 61, 61);">
+              <h5><b>DESIGNING </b></h5>
+              <p>We house designing experts who understand the trends and create classic website designs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col box" style="transition: transform 1s ease-in-out; ">
+          <div style="border: 1px solid black; padding: 10px; background-color: rgba(4, 72, 136, 0.911);">
+            <div style="border: 1px solid black; padding: 20px; background-color: rgb(61, 61, 61);">
+              <h5><b>CODING </b></h5>
+              <p>Our experienced coding team come with expertise on diverse technology platforms.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col box " style="transition: transform 1s ease-in-out; ">
+          <div style="border: 1px solid black; padding: 10px; background-color: rgba(4, 72, 136, 0.911);">
+            <div style="border: 1px solid black; padding: 20px; background-color: rgb(61, 61, 61);">
+              <h5> <b>SUPPORT </b></h5>
+              <p>We provide 24/7 support for website maintenence, upgradation, seo, etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***************** grid 2 colmns ******************** -->
+  <div class="row g-2 align-items-center " style="background-color: rgb(61, 61, 61) ; ">
+    <div class="col-lg-4 text-center">
+      <img src="images/bulb_img.png" alt="" width="250px">
+    </div>
+    <div class="col-lg-8" style="color: whitesmoke; align-items: center;">
+      <h4><b>WE HAVE PROFESSIONAL WEB DESIGNING SOLUTIONS FOR EVERYONE!</b></h4>
+      <p>At Itarsia India Limited, we are here to help you. Whether you are a starter in the business or an established
+        organization, <br> we understand your need is unique. And we offer you a completely customized solution to suit
+        your
+        needs. Choose from <br> Static, Dynamic or CMS based website - we will develop it for you.</p>
+      <button class="btn">EXPLORE</button>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 60px; padding: 50px;">
+    <h1> <span style="color: rgb(78, 77, 77);">OUR</span> <span style="color: rgb(53, 163, 226)  ;">SPECIALITIES</h1>
+    </span>
+    <p style="text-align: center;">Itarsia team works on a variety of platforms for front-end and back-end. Whether it
+      designing or coding, we put
+      our best foot forward. And that's why, we have experts working <br> on your requirements. Here are few of our
+      startup
+      plans -</p>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <img src="images/sp_1.png" alt="">
+        </div>
+        <div class="col">
+          <img src="images/sp_2.png" alt="">
+        </div>
+        <div class="col">
+          <img src="images/sp_3.png" alt="">
+        </div>
+        <div class="col">
+          <img src="images/sp_4.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************** relative and absolute -->
+
+
+
+
+
+
+  <div class="bg-img d-flex  align-items-center" style="  background: url(images/water_plants.jpg)">
+    <div class="container">
+      <div class="banner row " style="transition: transform 0.7s ease-in-out; ">
+        <div class="col-lg-7" style=" background-color: rgba(252, 246, 246, 0.904); padding: 90px;">
+          <div>
+            <p style="font-size: 42px;"> <span style="color: rgb(78, 77, 77);">COST & TIME </span> <span
+                style="color: rgb(53, 163, 226)  ;">EFFECTIVE!</p>
+            <p style="font-size: 17px;">At Itarsia India Limited, our aim is to offer a solution to our customers which
+              is both - cost effective
+              and
+              time effective. Our customized Web Designing and Development packages are designed in a way that our
+              clients
+              get maximum benefit out of it. We believe in creating digital visibility which is cost-effective and
+              unique at
+              the same time. We help our customers put up a dynamic and CMS driven websites in as less as 2 days; making
+              it
+              the most time-effective.</p>
+            <button style="color: whitesmoke; background-color: black; border-radius: 4px; padding: 9px;">Get Started
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color:rgb(53, 163, 226) ; color: whitesmoke; padding: 30px; text-align: center;">
+    <div>
+      <p><b><span style="font-size: 32px;"> We Help Passionate Companies Grow </span> </b>
+        <br> We have served SMEs (small and medium-sized enterprises) and corporate houses with our web designing and
+        development services. Our clients come from diverse industry segments <br> like Finance, IT, Real Estate,
+        Entertainment, Media, etc. Our services have been appreciated and helped us be retained by our clients time and
+        again.
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-1" style="background-color: rgba(252, 246, 246, 0.904);">
+    <div class="col-lg-6 text-center">
+      <img src="images/search_engine.png" width="80%">
+    </div>
+    <div class="col-lg-6" style="color: black;  ">
+      <p style="font-size: 45px;"> <span style="color: rgb(68, 66, 66); font-weight: 550;">STRATEGIC</span> <br> <span
+          style="color: rgb(53, 163, 226)  ; font-weight: 500;"><b>SEO</b></p>
+      <p>Getting a good google ranking is not a piece of caking. A lot of research and analysis <br> goes into this. We
+        build
+        a result-oriented SEO strategy for our clients which is 3 - 6 <br> months long and based on white hat practices,
+        so
+        they get optimum and long term <br> benefit from our SEO and SMO services.</p>
+      <div class="read">
+        <i class="fa-solid fa-circle-right"></i>
+        <a class="link" href="#kanha"> Read More</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- *****************************  MAC ******************************-->
+  <div style="background-color: rgb(37, 35, 35);">
+    <div class="container py-5">
+      <div style="color: whitesmoke;">
+        <h4 style="text-align: center; margin-top: 50px;">GET CMS BASED WEBSITE AT AFFORDABLE PRICES</h4>
+        <p style="text-align: center;">We help you with CMS based websites with which, you can manage your content at
+          your
+          end with ease.</p>
+        <div class="row justify-content-center align-items-end">
+          <div class="col-lg-2 mb-5">
+            <p> <span class=" border p-2 rounded-circle"> <i class="fa-solid fa-circle-play"></i></span> Attractive Web
+              Design</p>
+            <p>&nbsp;&nbsp; <span class=" border p-2 rounded-circle"> <i class="fa-solid fa-clipboard-question"></i>
+              </span> jQuery Image Slider</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class=" border p-2 rounded-circle"> <i
+                  class="fa-solid fa-circle-xmark"></i></span> Google Analytics</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class=" border p-2 rounded-circle"> <i
+                  class="fa-solid fa-circle-exclamation"></i> </span> Social PageLink</p>
+          </div>
+          <div class="col-lg-8">
+            <img src="images/mac.png" alt="" width="100%">
+          </div>
+
+          <div class="col-lg-2 mb-5 margin-right-1rem">
+            <p> Attractive Web <span class=" border p-2 rounded-circle"><i class="fa-solid fa-circle-play"></i></span>
+            </p>
+            <p>
+              jQuery Image Slider <span class=" border p-2 rounded-circle"><i
+                  class="fa-solid fa-clipboard-question"></i> </span></p>
+            <p> &nbsp; Google
+              Analytics <span class=" border p-2 rounded-circle"> <i class="fa-solid fa-circle-xmark"></i> </span></p>
+            <p> &nbsp;
+              Social PageLink <span class=" border p-2 rounded-circle"> <i class="fa-solid fa-circle-exclamation"></i>
+              </span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************** grid *********** -->
+  <div class="main" style="background-color: rgb(243, 239, 239);padding-top: 50px; ">
+    <div class="row align-items-center my-5 mb-6">
+      <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <img src="images/mobile.png" alt="" width="100% ">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" style="padding: 20px;">
+        <h1> <span style="color: rgb(68, 66, 66) ;">RELIABLE</span> <span style="color: rgb(53, 163, 226) ;"> SUPPORT &
+            <br> SERVICES </span></h1>
+        <div style="color: rgb(112, 111, 111);">
+          <p>With Itarsia India Limited, you can be rest assured of our services. Quality and <br> Promptness are the
+            two
+            motto we operate with. With us, you get -</p>
+          <p><i style="font-size: 12px; color: rgb(68, 66, 66) ;" class="fa-solid fa-star"></i>Timely Support from
+            Experts
+          </p>
+          <p><i style="font-size: 12px; color: rgb(180, 179, 179) ;" class="fa-solid fa-star"></i> Aesthetic &
+            Professional
+            Website Designs</p>
+          <p><i style="font-size: 12px; color: rgb(68, 66, 66) ;" class="fa-solid fa-star"></i> Cost Effective &
+            Customized
+            Solutions</p>
+          <p><i style="font-size: 12px; color: rgb(180, 179, 179) ;" class="fa-solid fa-star"></i> Result-Oriented SEO
+          </p>
+          <button class="btn1" style="border: 1px solid black; font-weight: 500; padding: 9px;">Try It Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ******** Small to big images *********** -->
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1> <span style="color: rgb(68, 66, 66) ;">RESPONSIVE </span> <span
+            style="color: rgb(53, 163, 226) ;">DESIGN</span></h1>
+        <div style="color: rgb(112, 111, 111);">
+          <p>We create responsive designs for your websites, compatible over various browsers and devices, so you can
+            offer great viewing experience and easy navigation to your users and customers.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/big1.png" alt="" width="100%">
+      </div>
+    </div>
+  </div>
+
+
+  <div style="background-color:rgb(53, 163, 226) ; color: whitesmoke; padding: 30px; text-align: center;">
+    <div>
+      <p><b><span style="font-size: 22px;"> From The Knowledge Bank </span> </b>
+        <br> We often share knowledge on various trends on website designs, development, SEO, SMO, Social Media
+        Marketing, Application development, etc. <br> Check out our portfolio section & Contact us now to get your
+        business
+        Online -
+      </p>
+    </div>
+  </div>
+
+  <!-- ************** PHOTO COLLAGE *************** -->
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-6" style="color: rgb(112, 111, 111); ">
+      <h1 style="margin-left: 120px;"> <span style="color: rgb(68, 66, 66) ;">OUR</span> <span
+          style="color: rgb(53, 163, 226) ;">CLIENTS</span>
+      </h1>
+      <div style="color: rgb(112, 111, 111);">
+        <p style="margin-left: 120px;">We are proud to have served more than 4500+ clients to their satisfaction and
+          stand as one of the most
+          preferred partner for website design and development in the industry.</p>
+      </div>
+      <ul style="list-style: none; margin-left: 80px;">
+        <li> &#10153; We do not make Website, but Build Customer for Your Business
+        </li>
+        <li> &#10153; 100% Customer Satisfaction is Our Moto</li>
+        <li> &#10153; Our Expertise and Competency is on par with the Global Needs</li>
+        <li> &#10153; Confidentiality is Maintained
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <div class="container" style=" border-bottom: 1px solid rgb(220, 230, 238);">
+        <div class="row">
+          <div class="col-sm" style=" border-right: 1px solid rgb(220, 230, 238);">
+            <center><img src="images/logo1.png" alt=""></center>
+          </div>
+          <div class="col-sm" style=" border-right: 1px solid rgb(220, 230, 238);">
+            <center><img src="images/logo2.png" alt=""></center>
+          </div>
+          <div class="col-sm">
+            <center><img src="images/logo3.png" alt=""></center>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style=" border-bottom: 1px solid rgb(220, 230, 238);">
+        <div class="row">
+          <div class="col-sm" style=" border-right: 1px solid rgb(220, 230, 238);">
+            <center> <img src="images/logo4.png" alt=""></center>
+          </div>
+          <div class="col-sm" style=" border-right: 1px solid rgb(220, 230, 238);">
+            <center> <img src="images/logo5.png" alt="">
+          </div>
+          <div class="col-sm">
+            <center> <img src="images/logo6.png" alt=""></center>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm" style=" border-right: 1px solid rgb(220, 230, 238);">
+            <img src="images/logo7.png" alt="">
+          </div>
+          <div class="col-sm" style=" border-right: 1px solid rgb(220, 230, 238);">
+            <img src="images/logo8.png" alt="">
+          </div>
+          <div class="col-sm border-right">
+            <img src="images/logo9.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--  ******************* FOOTER ****************** -->
+
+
+  <div style="background-color: rgb(53, 49, 49);">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 ">
+        <div class="col" style="margin-top: 20px;">
+          <h5 style="color: #fffbfb; margin-left: 30px;">Navigation</h5>
+          <ul class="high">
+            <li><a href=""> <i class="fa-solid fa-arrow-right"></i>Joomla / Wordpress</a></li>
+            <li><a href=""> <i class="fa-solid fa-arrow-right"></i>Dynamic Website Design </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i>Static Website Design </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i>CMS Website Development </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i>PHP / Custom Website </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i> eCommerce Development </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i> Web Portal Development </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i> SEO-Search Engine Optimization </a></li>
+            <li><a href=""> <i class="fa-solid fa-arrow-right"></i>Mobile App's </a></li>
+          </ul>
+        </div>
+        <div class="col" style="margin-top: 20px;">
+          <h5 style="color: #fffbfb; margin-left: 30px;">Web Hosting & Securities</h5>
+          <ul class="high">
+            <li> <a href=""> <i class="fa-solid fa-arrow-right"></i>SSL Certificate </a></li>
+            <li><a href=""> <i class="fa-solid fa-arrow-right"></i>Sitelock Maleware Detector </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i>Codeguard Website Backup </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i>Linux Hosting </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i>Windows Hosting </a></li>
+            <li><a href=""> <i class="fa-solid fa-arrow-right"></i>Linux Restler Hosting </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i> Windows Restler Hosting </a></li>
+            <li><a href=""> <i class="fa-solid fa-arrow-right"></i>VPS Hosting </a></li>
+            <li><a href=""><i class="fa-solid fa-arrow-right"></i>Managed dedicated Hosting </a></li>
+          </ul>
+        </div>
+        <div class="col" style="margin-top: 20px;">
+          <h5 style="color: #fffbfb; margin-left: 30px;">Quick Links</h5>
+          <ul class="high">
+            <li><a href="">Blog </a></li>
+            <li><a href="">Process </a></li>
+            <li><a href="">Registeration form </a></li>
+            <li><a href="">Website Design & Development Company </a></li>
+            <li><a href="">Web Development Company </a></li>
+            <li><a href=""> Ecommerce Website Design & Development </a></li>
+            <li><a href=""> Mobile Apps Development Company </a></li>
+            <li><a href="">Software Development Company </a></li>
+          </ul>
+        </div>
+        <div class="col" style="margin-top: 20px;">
+          <h5 style="color: #fffbfb; margin-left: 30px;">Itarsia Network</h5>
+          <ul class="high">
+            <li><a href="">India </a></li>
+            <li><a href="">USA </a></li>
+            <li><a href="">Australia </a></li>
+            <li><a href="">Italy </a></li>
+            <li><a href=""> Kuwait </a></li>
+          </ul>
+          <br>
+          <h5 style="color: #fffbfb; margin-left: 30px;">Social</h5>
+          <div style="font-size: 23px; color: whitesmoke;">
+            <i class="fa-brands fa-facebook-f"></i>
+            &nbsp; <i class="fa-brands fa-twitter"></i>
+            &nbsp; <i class="fa-brands fa-instagram"></i>
+            &nbsp; <i class="fa-brands fa-pinterest"></i>
+            &nbsp; <i class="fa-brands fa-linkedin-in"></i>
+            &nbsp; <i class="fa-brands fa-tumblr"></i>
+            &nbsp; <img src="images/whatsapp.png" alt="" width="17%">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
